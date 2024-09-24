@@ -8,21 +8,6 @@
 #include "display.h"
 #include "vector.h"
 
-#define N_POINTS (9*9*9)
-vec3_t cube_points[N_POINTS];
-vec2_t projected_points[N_POINTS];
-
-vec3_t cube_rotation ={0, 0, 0};
-vec3_t cube_traslation ={0, 0, 0};
-vec3_t cube_scale ={1, 1, 1};
-
-float fov_factor = 720;
-
-bool is_running = false;
-int previous_frame_time = 0;
-
-
-
 // Crea una matriz identidad 4x4
 mat4_t mat4_identity(void) {
     mat4_t result = {0};

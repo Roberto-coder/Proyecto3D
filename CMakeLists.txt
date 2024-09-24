@@ -10,6 +10,8 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIR})
 
 add_executable(HelloWorld main.c
-        display.c)
+        display.c
+        matrix.c
+        vector.c)
 
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARY})
