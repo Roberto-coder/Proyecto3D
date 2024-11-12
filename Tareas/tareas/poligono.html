@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Interactive Polygon Fill</title>
+    <style>
+        #canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div id="btns">
+        <button id="btn" onclick="fillPolygonAnimated('blue')">Rellenar Polígono</button>
+        <button id="btn" onclick="clearCanvas()">Limpiar</button>
+    </div>
+    
+    <script src="js/polygon_filling.js"></script>
+</body>
+</html>
